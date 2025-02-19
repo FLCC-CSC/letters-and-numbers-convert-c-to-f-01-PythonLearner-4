@@ -25,6 +25,7 @@ jobs:
           is 212.0 degrees Fahrenheit."
         comparison-method: exact
         timeout: 10
+        max-score: 10
     - name: Test Case 2 [-40]
       id: test-case-2-40
       uses: classroom-resources/autograding-io-grader@v1
@@ -37,6 +38,7 @@ jobs:
           is -40.0 degrees Fahrenheit."
         comparison-method: exact
         timeout: 10
+        max-score: 10
     - name: Test Case 3 [1]
       id: test-case-3-1
       uses: classroom-resources/autograding-io-grader@v1
@@ -49,6 +51,7 @@ jobs:
           33.8 degrees Fahrenheit."
         comparison-method: exact
         timeout: 10
+        max-score: 10
     - name: Autograding Reporter
       uses: classroom-resources/autograding-grading-reporter@v1
       env:
